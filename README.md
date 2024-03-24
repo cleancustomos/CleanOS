@@ -11,4 +11,4 @@ CleanOS allows you to reduce the bloat of windows. All unnecessary and system-ta
 All changes and tools used in CleanOS are open source
 
 ### 🔒 Yasal Uygunluk
-CleanOS doesn't try to damage Windows ISO files or add malicious worms, the main goal is to remove many of the components that users don't want and don't want. [[Microsoft'un Hizmet Şartları](https://www.microsoft.com/en-us/Useterms/Retail/Windows/10/UseTerms_Retail_Windows_10_English.htm)] 
+CleanOS doesn't try to damage Windows ISO files or add malicious worms, the main goal is to remove many of the components that users don't want and don't want. [[Microsoft's Terms of Service](https://www.microsoft.com/en-us/Useterms/Retail/Windows/10/UseTerms_Retail_Windows_10_English.htm)] 

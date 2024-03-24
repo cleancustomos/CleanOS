@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="http://atlasos.net" target="_blank"><img src="https://raw.githubusercontent.com/cleancustomos/CleanOS/main/Assets/cover.png" alt="Atlas" width="800"></a>
+  <a target="_blank"><img src="https://raw.githubusercontent.com/cleancustomos/CleanOS/main/Assets/cover.png" alt="CleanOS" width="800"></a>
 </h1>
 <p align="center">Performance, Privacy and a Transparent windows experience.</p>
 
@@ -10,5 +10,5 @@ CleanOS allows you to reduce the bloat of windows. All unnecessary and system-ta
 ### 🔍 Open Source and Transparent
 All changes and tools used in CleanOS are open source
 
-### 🔒 Yasal Uygunluk
+### 🔒 Legal Compliance
 CleanOS doesn't try to damage Windows ISO files or add malicious worms, the main goal is to remove many of the components that users don't want and don't want. [[Microsoft's Terms of Service](https://www.microsoft.com/en-us/Useterms/Retail/Windows/10/UseTerms_Retail_Windows_10_English.htm)] 

@@ -641,5 +641,36 @@ Windows Registry Editor Version 5.00
 "Hilight"="0 120 215"
 "HotTrackingColor"="75 0 255"
 
+; -- Dosya Gezgini Compakt Modu
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"UseCompactMode"=dword:00000001
 
+; Edge tanılama verisi gönderimini devre dışı bırak ("Tarayıcınız yönetiliyor" ifadesini gösterir)
+; Edge v88 için ölçümleri ve site bilgisi gönderimini devre dışı bırakma ≥
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"MetricsReportingEnabled"=dword:00000000
+"SendSiteInfoToImproveServices"=dword:00000000
+; Disabling diagnostic data (replacing metrics and site info sending since Edge v89 ≤)
+"DiagnosticData"=dword:00000000
 
+; Edge (Chromium) otomatik yüklemesini devre dışı bırak
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate]
+"DoNotUpdateToEdgeWithChromium"=dword:00000001
+
+; Edge SmartScreen'i Devre Dışı Bırak
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
+"EnabledV9"=dword:00000000
+"PreventOverride"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\PhishingFilter]
+"EnabledV9"=dword:00000000
+"PreventOverride"=dword:00000000
+
+; Microsoft Edge sürüm 77 veya üstü için
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"SmartScreenEnabled"=dword:00000000
+"PreventSmartScreenPromptOverride"=dword:00000000
+
+; OneDrive Kapat
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive]
+"DisableFileSyncNGSC"=dword:00000001

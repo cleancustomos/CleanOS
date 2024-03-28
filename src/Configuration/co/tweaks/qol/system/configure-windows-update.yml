@@ -1,0 +1,24 @@
+---
+title: configure-windows-update-and-install
+description: configure-windows-update-and-install
+privilege: TrustedInstaller
+actions:
+    # =========================================
+    # === Malicious Software Reporting Tool ===
+    # =========================================
+    # === Prevent Malicious Software Removal Tool from installing - Enabled
+    # ------> https://winaero.com/blog/disable-malicious-software-removal-tool/
+  - !registryValue: {path: 'HKLM\SOFTWARE\Policies\Microsoft\MRT', value: 'DontOfferThroughWUAU', type: REG_DWORD, data: '1'}
+    # === Disable Malicious Software Reporting tool diagnostic data - Enabled
+    # ------> https://admx.help/?Category=Windows10_Telemetry&Policy=Microsoft.Policies.Win10Privacy::DontReportInfection
+  - !registryValue: {path: 'HKLM\Software\Policies\Microsoft\MRT', value: 'DontReportInfectionInformation', type: REG_DWORD, data: '0'}
+    # =============
+    # === Extra ===
+    # =============
+    # === Download repair content and optional features directly from Windows Update instead of Windows Server Update Services (WSUS) - True
+    # ------> Enable WSUS Fondue.
+    # ------> https://admx.help/?Category=Windows_10_2016&Policy=Microsoft.Policies.Servicing::Servicing
+  - !registryValue: {path: 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Servicing', value: 'RepairContentServerSource', type: REG_DWORD, data: '2'}
+    # --- Reserved Storage (for updates) - Disabled
+    # ------> https://www.howtogeek.com/425563/how-to-disable-reserved-storage-on-windows-10/
+  - !registryValue: {path: 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\ReserveManager', value: 'ShippedWithReserves', type: REG_DWORD, data: '0'}

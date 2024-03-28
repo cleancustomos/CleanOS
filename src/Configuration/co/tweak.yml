@@ -1,0 +1,90 @@
+---
+title: Tweak
+description: Tweak configuration
+privilege: TrustedInstaller
+actions: 
+  - !writeStatus: {status: "Tweaking"}
+features:
+    # ===================
+    # === Performance ===
+    # ===================
+  - co\tweaks\performance\configure-kernel.yml
+  - co\tweaks\performance\configure-win32priorityseparation.yml
+  - co\tweaks\performance\disable-core-isolation.yml
+  - co\tweaks\performance\disable-prefetcher-superfetch-and-readyboost.yml
+  - co\tweaks\performance\disable-scheduled-tasks.yml
+  - co\tweaks\performance\services.yml
+
+    # ============================
+    # === Privacy and Security ===
+    # ============================
+  - co\tweaks\privacy-security\configure-content-delivery.yml
+  - co\tweaks\privacy-security\configure-privacy.yml
+  - co\tweaks\privacy-security\configure-security.yml
+  - co\tweaks\privacy-security\disable-uac.yml
+  - co\tweaks\privacy-security\security-maintenance.yml
+
+    # =======================
+    # === Quality of Life ===
+    # =======================
+    
+    # qol\appearance
+  - co\tweaks\qol\appearance\configure-startmenu-and-taskbar.yml
+  - co\tweaks\qol\appearance\theme.yml
+  - co\tweaks\qol\appearance\visual-effects.yml
+
+    # qol\appx
+  - co\tweaks\qol\appx\configure-deprovisioned-apps.yml
+  - co\tweaks\qol\appx\configure-microsoft-store.yml
+  - co\tweaks\qol\appx\disable-installing-teams.yml
+
+    # qol\ease-of-access
+  - co\tweaks\qol\ease-of-access\disable-ease-of-access-features.yml
+
+    # qol\explorer
+  - co\tweaks\qol\explorer\add-hashes-checking-submenu-in-context-menu.yml
+  - co\tweaks\qol\explorer\add-take-ownership-in-context-menu.yml
+  - co\tweaks\qol\explorer\configure-explorer-settings.yml
+  - co\tweaks\qol\explorer\old-rightclick-menu.yml
+
+    # qol\hardware
+  - co\tweaks\qol\hardware\mouse-tweaks.yml
+
+    # qol\security
+  - co\tweaks\qol\security\disable-uac-secure-desktop.yml
+
+    # qol\shell
+  - co\tweaks\qol\shell\configure-search-and-cortana.yml
+  - co\tweaks\qol\shell\disable-aero-shake.yml
+  - co\tweaks\qol\shell\disable-menu-delay.yml
+  - co\tweaks\qol\shell\no-recommendation-startmenu.yml
+
+    # qol\startup-shutdown
+  - co\tweaks\qol\startup-shutdown\configure-logon.yml
+  - co\tweaks\qol\startup-shutdown\configure-power-control.yml
+  - co\tweaks\qol\startup-shutdown\decrease-shutdown-time.yml
+  - co\tweaks\qol\startup-shutdown\disable-startup-delay.yml
+  - co\tweaks\qol\startup-shutdown\force-close-apps.yml
+
+    # qol\system
+  - co\tweaks\qol\system\configure-crash-control.yml
+  - co\tweaks\qol\system\configure-multimedia.yml
+  - co\tweaks\qol\system\configure-windows-settings.yml
+  - co\tweaks\qol\system\configure-windows-update.yml
+  - co\tweaks\qol\system\disable-disk-checking.yml
+  - co\tweaks\qol\system\enable-audio-communications-do-nothing.yml
+  - co\tweaks\qol\system\make-msi-installer-work-in-safe-mode.yml
+  - co\tweaks\qol\system\restore-windows-photo-viewer-all-users.yml
+
+    # =============
+    # === Other ===
+    # =============
+  - co\tweaks\other\bypass-requirements.yml
+  - co\tweaks\other\config-oem-info.yml
+  - co\tweaks\other\configure-ifeo.yml
+  - co\tweaks\other\configure-internet-explorer.yml
+  - co\tweaks\other\configure-oobe.yml
+  - co\tweaks\other\disable-automatic-maintenance.yml
+  - co\tweaks\other\disable-logging.yml
+  - co\tweaks\other\disable-system-restore-pre-defined-config.yml
+  - co\tweaks\other\fixes.yml

@@ -1,0 +1,20 @@
+---
+title: Configure Information
+description: Configures information to contain the CleanOS version
+privilege: TrustedInstaller
+actions:
+  - !registryValue:
+    path: 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation'
+    value: 'Manufacturer'
+    data: '.Synt4xErr0r'
+    type: REG_SZ
+  - !registryValue:
+    path: 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation'
+    value: 'Model'
+    data: 'CleanOS'
+    type: REG_SZ
+  - !registryValue:
+    path: 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation'
+    value: 'SupportURL'
+    data: 'https://github.com/cleancustomos'
+    type: REG_SZ

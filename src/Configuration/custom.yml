@@ -1,0 +1,12 @@
+---
+title: Custom
+description: Custom CleanOS configuration
+privilege: Admin
+actions: []
+features:
+  - co\start.yml
+  - co\software.yml
+  - co\components.yml
+  - co\appx.yml
+  - co\tweak.yml
+  - co\config.yml
